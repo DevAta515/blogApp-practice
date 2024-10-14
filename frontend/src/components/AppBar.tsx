@@ -6,9 +6,10 @@ const AppBar = ({ authorName }: details) => {
     const navigate = useNavigate();
     return (
         <div className='flex justify-between px-10 border-b-2 border-b-black items-center bg-slate-100 py-2 mb-3 cursor-pointer'
-            onClick={() => navigate("/blogs")}
+
         >
-            <div className='text-2xl font-semibold'>
+            <div className='text-2xl font-semibold'
+                onClick={() => navigate("/blogs")}>
                 Medium
             </div>
             <div className="flex justify-between items-center gap-24">
